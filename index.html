@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff3f8">
+<title>Dear You ❤️</title>
+<style>
+:root{--rose:#d94e83;--ink:#583449;--muted:#856779;--line:#f0d4e0}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;padding:24px;display:grid;place-items:center;background:radial-gradient(ellipse at 12% 10%,#ffdce9 0,transparent 42%),radial-gradient(ellipse at 90% 85%,#e8ddff 0,transparent 38%),#fff8fb;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+.wrap{width:min(100%,660px)}
+.top{text-align:center;margin-bottom:18px;font-family:system-ui,sans-serif;color:var(--muted);font-size:12px;letter-spacing:.17em;text-transform:uppercase}
+.card{position:relative;background:#fffdfd;border:1px solid white;border-radius:24px;padding:clamp(24px,6vw,48px);box-shadow:0 25px 75px #9a49641c;overflow:hidden}
+.card:before{content:"";position:absolute;inset:10px;border:1px solid #f8e7ee;border-radius:17px;pointer-events:none}
+.heart{font-size:32px;text-align:center;animation:float 2.2s ease-in-out infinite}
+h1{text-align:center;font-size:clamp(32px,7vw,46px);font-weight:normal;margin:12px 0 6px;color:#8e345b}
+.sub{text-align:center;font-family:system-ui,sans-serif;font-size:13px;color:#a77d91;margin-bottom:28px}
+.copy p{font-size:18px;line-height:1.85;margin:0 0 18px}
+.copy p:last-child{margin-bottom:0}
+.sign{text-align:center;font-size:21px;color:#a43e6a;margin-top:26px}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:28px;position:relative}
+button{font:600 14px system-ui,sans-serif;border:0;border-radius:999px;padding:13px 19px;cursor:pointer;transition:transform .15s}
+button:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(135deg,#e96e9b,#c84178);color:white;box-shadow:0 8px 20px #c8417828}
+.soft{background:#faedf3;color:#93446a}
+.response{display:none;margin-top:22px;padding:18px;border-radius:16px;text-align:center;background:#fff2f7;font:15px/1.7 system-ui,sans-serif;color:#7a3d5c}
+.response.show{display:block}
+.foot{text-align:center;color:#a98c9d;font:12px system-ui,sans-serif;margin-top:18px}
+.intro-card{text-align:center;min-height:320px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.intro-emoji{font-size:52px;margin:8px 0 12px;animation:float 2.2s ease-in-out infinite}
+.intro-title{font-size:clamp(27px,6vw,38px);font-weight:normal;color:#8e345b;margin:8px 0 12px}
+.intro-message{font:17px/1.8 system-ui,sans-serif;color:#775268;max-width:440px;min-height:86px;display:grid;place-items:center}
+.progress{font:12px system-ui,sans-serif;color:#b17b95;margin:14px 0 18px}
+.hidden{display:none!important}
+.sparkles{color:#e78bab;letter-spacing:.5em;text-align:center;margin:0 0 14px}
+@keyframes float{50%{transform:translateY(-5px)}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<main class="wrap">
+<section id="introScreen">
+<div class="top">A very serious message (NOAH) 😂</div>
+<article class="card intro-card">
+<div class="sparkles">✦ · ✧ · ✦</div>
+<div class="intro-emoji" id="introEmoji">👀</div>
+<h1 class="intro-title" id="introTitle">Before you open this...</h1>
+<div class="intro-message" id="introMessage" aria-live="polite">I need to make sure you're emotionally prepared. 😂</div>
+<div class="progress" id="introProgress">Funny message 1 of 4</div>
+<div class="actions"><button class="primary" id="nextButton" onclick="nextIntro()">Continue 😂</button></div>
+</article>
+<div class="foot">Please keep a straight face. Challenge level: impossible. ♡</div>
+</section>
+<section id="letterScreen" class="hidden">
+<div class="top">A little note from the heart</div>
+<article class="card">
+<div class="sparkles">✦ · ✧ · ✦</div>
+<div class="heart">💌</div>
+<h1>Dear Delight, ❤️</h1>
+<div class="sub">Something I've been meaning to tell you</div>
+<div class="copy">
+<p>I’m not sure how to say all of this perfectly, so I’ll just say it honestly.</p>
+<p>You have this special way of making ordinary moments feel a little more beautiful. Sometimes, just talking to you or seeing your name pop up on my phone is enough to put a smile on my face. I don’t know if you’ve noticed, but you’ve slowly become someone I look forward to hearing from and someone who crosses my mind more often than you might imagine.</p>
+<p>There’s a quiet feeling I get when I think of you — like something is right, even if the rest of the world isn’t. It’s not loud or dramatic. It’s just real.</p>
+<p>I’m not sure what you think of me, and I don’t want to make things awkward between us. But I believe some people come into our lives and quietly become more important than we ever expected. For me, you might just be one of those people.</p>
+<p>Sometimes, I wonder what it would be like if we became more than just two people who talk and share moments. What if we gave ourselves the chance to create something beautiful together? Something built on friendship, honesty, laughter, care, and perhaps a little romance.</p>
+<p>I’m not asking you to give me an answer to anything right now. I just wanted you to know that, if you ever wondered whether someone sees you as more than ordinary, there might be someone closer than you think.</p>
+<p>And maybe, just maybe, that someone is me. ❤️</p>
+</div>
+<div class="sign">With a little hope, ❤️</div>
+<p>Tape on any of the buttons below, take a screenshot of the reply and send it to me on whatsapp</p>
+<div class="actions">
+<button class="primary" onclick="showReply('smile')">🥹 You made me smile</button>
+<button class="soft" onclick="showReply('think')">💗 I need a little time</button>
+<button class="soft" onclick="showReply('talk')">😊 Let’s talk about it</button>
+</div>
+<div class="response" id="response" aria-live="polite"></div>
+</article>
+<div class="foot">No pressure. Just honesty, and a little courage. ♡</div>
+</section>
+</main>
+<script>
+const introSlides = [
+ {emoji:'👀', title:'Before you open this...', message:'I need to make sure you’re emotionally prepared. 😂'},
+ {emoji:'📱', title:'Important warning ⚠️', message:'This page may cause unexpected smiling, random blushing, or checking your phone for no reason. Side effects may vary. 😭😂'},
+ {emoji:'🏫', title:'A classroom reminder', message:'If we see each other in class after this, please act normal. I will also be acting normal… probably. 🤣'},
+ {emoji:'💗', title:'Okay, jokes aside…', message:'There’s something sincere I’ve wanted to tell you. No pressure, no awkwardness—just me being honest. Ready? ❤️'}
+];
+let introIndex = 0;
+function nextIntro(){
+ introIndex++;
+ if(introIndex >= introSlides.length){
+  document.getElementById('introScreen').classList.add('hidden');
+  document.getElementById('letterScreen').classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+  return;
+ }
+ const slide=introSlides[introIndex];
+ document.getElementById('introEmoji').textContent=slide.emoji;
+ document.getElementById('introTitle').textContent=slide.title;
+ document.getElementById('introMessage').textContent=slide.message;
+ document.getElementById('introProgress').textContent=`Funny message ${introIndex+1} of ${introSlides.length}`;
+ document.getElementById('nextButton').textContent=introIndex===introSlides.length-1?'Open the letter ❤️':'Next message 😂';
+}
+function showReply(type){
+ const r=document.getElementById('response');
+ const messages={
+ smile:"Aww, that was the hope. ❤️ No pressure to have all the answers now — I'm just glad you read my little note. 😊",
+ think:"Of course. ❤️ Take all the time you need. I wanted to be honest with you, and I respect whatever you feel.",
+ talk:"I'd like that. 😊❤️ Let's talk naturally and see where things go, one step at a time."
+ };
+ r.textContent=messages[type];r.classList.add('show');r.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+</script>
+</body></html>
